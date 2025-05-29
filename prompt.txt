@@ -1,0 +1,24 @@
+Olá! No meu projeto, preciso fazer um Blogsite sobre algum dos temas oferecidos pela universidade, e eu escolhi "Gastronomia". O blog deve ser composto de no mínimo a página Home e mais quatro páginas complementares. Preciso adotar todas as estruturas básicas de HTML: head, body, header, main e footer para definir o escopo e conteúdo global do site. 
+
+O site deve possuir espaçamento, conteúdo, estética e proporcionalidade de elementos adequados ao tema. 
+
+O site deve conter no mínimo cinco páginas e cinco respectivos elementos de navegação (<nav>): Home, nome_conteudo_1, nome_conteudo_2, nome_conteudo_3 e Contatos. Os elementos de navegação devem ser mantidos em todas as páginas.
+
+Na página Home, deve-se incluir um texto/resumo explicativo da funcionalidade do seu blog, bem como explicitar os conteúdos de destaque. 
+
+Para cada conteúdo de destaque (nome_conteúdo_XYZ), é preciso incluir uma imagem na Home com uma breve descrição e transformar a imagem em um link (<a>) para a respectiva página. 
+
+Gostaria que, com base em todos os documentos fornecidos sobre o tema, você me dê um esqueleto HTML com todos os elementos requisitados de forma proporcional à tela do usuário, interface amigável e intuitiva, usando as cores #0096E1, #FFFFFF e #F09BBE para representar as cores da bandeira do Espirito Santo. 
+
+Digo isso pois, na minha ideia, o blog será composto das páginas:
+
+1. "Home", onde terá o texto/resumo explicativo da funcionalidade do blog, curiosidades sobre a culinária capixaba, eventos e programações gastronômicas previstas;
+2. "Comida Árabe"
+3. "Comida Italiana"
+4. "Comida Oriental" 
+5. "Comida Capixaba";
+Além do Menu de "contatos" citado nos requisitos. Todas essas páginas devem poder ser acessadas pelo elemento de navegação (<nav>), que se mantém em todas.
+
+Cada das páginas deverá ter um espeço para os resturantes que melhor representam sua culinária, um container para fotos e textos de descrição em baixo delas.
+
+Conto com você para criar um esqueleto HTML que possuia o espaçamento adequado, estética e proporcionalidade de elementos adequados, com base nos temas abordados nos documentos que enviei.

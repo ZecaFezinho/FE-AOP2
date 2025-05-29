@@ -1,0 +1,383 @@
+/* Variáveis de cores para a bandeira do Espírito Santo */
+:root {
+    --azul-es: #0096E1;
+    --branco-es: #FFFFFF;
+    --rosa-es: #F09BBE;
+    --cinza-texto: #333;
+    --cinza-claro-sombra: rgba(0, 0, 0, 0.1);
+    --cinza-medio-sombra: rgba(0, 0, 0, 0.2);
+    --rosa-hover: #d17ea1; /* Um tom mais escuro de rosa para hover */
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--branco-es);
+    color: var(--cinza-texto);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--azul-es);
+    color: var(--branco-es);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px var(--cinza-medio-sombra);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    padding: 0 1rem;
+}
+
+/* Navegação */
+nav {
+    background-color: var(--rosa-es);
+    padding: 0.8rem 0;
+    box-shadow: 0 1px 3px var(--cinza-claro-sombra);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: var(--branco-es);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Conteúdo principal (main) */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+main h2 {
+    color: var(--azul-es);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2em;
+}
+
+/* Seções de conteúdo geral */
+.content-section p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Seção Hero (Home) */
+.hero-section {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--cinza-claro-sombra);
+}
+
+.hero-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* Cards de conteúdo em destaque (Home) */
+.featured-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.content-card {
+    background-color: var(--branco-es);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--cinza-claro-sombra);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+}
+
+.content-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.content-card .description {
+    padding: 1rem;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.content-card h3 {
+    color: var(--azul-es);
+    margin-top: 1rem;
+    font-size: 1.5em;
+}
+
+.content-card a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+/* Seção de Eventos (Home) */
+.events-section {
+    margin-top: 3rem;
+}
+
+.events-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.event-list article {
+    background-color: var(--branco-es);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--cinza-claro-sombra);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.event-list h3 {
+    color: var(--azul-es);
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+/* Lista de Restaurantes */
+.restaurant-list {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.restaurant-card {
+    background-color: var(--branco-es);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--cinza-claro-sombra);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid var(--rosa-es);
+}
+
+.restaurant-card h3 {
+    color: var(--azul-es);
+    margin-top: 1rem;
+    font-size: 1.6em;
+    padding: 0 1rem;
+}
+
+.restaurant-card p {
+    padding: 0 1.5rem;
+    font-size: 0.95em;
+    color: #555;
+    text-align: left;
+}
+
+/* Seção de Contato */
+.contact-info {
+    background-color: var(--branco-es);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--cinza-claro-sombra);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: var(--azul-es);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--rosa-es);
+}
+
+.contact-form {
+    background-color: var(--branco-es);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--cinza-claro-sombra);
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--azul-es);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    background-color: var(--rosa-es);
+    color: var(--branco-es);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--rosa-hover);
+}
+
+/* Footer */
+footer {
+    background-color: var(--azul-es);
+    color: var(--branco-es);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    box-shadow: 0 -2px 5px var(--cinza-medio-sombra);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    main h2 {
+        font-size: 1.8em;
+    }
+
+    .hero-section {
+        padding: 1.5rem;
+    }
+
+    .featured-content,
+    .restaurant-list {
+        grid-template-columns: 1fr; /* Coloca os cards em uma única coluna */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 0.4rem 0.8rem;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    .hero-section {
+        padding: 1rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.6em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .content-card .description,
+    .restaurant-card p {
+        font-size: 0.9em;
+    }
+
+    .contact-info p,
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.95em;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - Sabor Capixaba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sabor Capixaba</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="arabe.html">Comida Árabe</a></li>
+            <li><a href="italiana.html">Comida Italiana</a></li>
+            <li><a href="oriental.html">Comida Oriental</a></li>
+            <li><a href="capixaba.html">Comida Capixaba</a></li>
+            <li><a href="contato.html" class="active">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Entre em Contato Conosco!</h2>
+        <section class="contact-info">
+            <p>Seja para tirar dúvidas, dar sugestões, ou nos enviar uma receita deliciosa, sua mensagem é muito bem-vinda!</p>
+            <p><strong>E-mail:</strong> <a href="mailto:contato@saborcapixaba.com.br">contato@saborcapixaba.com.br</a></p>
+            <p><strong>Telefone:</strong> (27) 99999-9999</p>
+        </section>
+
+        <section class="contact-form">
+            <h3>Envie-nos uma Mensagem</h3>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabor Capixaba. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
